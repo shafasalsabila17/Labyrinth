@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        var camDistance = cam.transform.position.y; 
+        var camDistance = cam.transform.position; 
         var frustumHeight = 2 * camDistance * Mathf.Tan(cam.fieldOfView * 0.5f * Mathf.Deg2Rad);
         var scale = frustumHeight/Screen.height;
     }
@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
     private void Drag (Touch [] touches)
     {
         var touch = Input.GetTouch(0);
-        cam.transform.position -= new Vector3 (touch.deltaPosition.x, 0, touch.deltaPosition.y) * scale;
+        cam.transform.position -= new Vector3 (touch.deltaPosition.x, 0, touch.deltaPosition.y) *frustumScale;
         
     }
 
