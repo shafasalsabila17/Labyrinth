@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac46385267dbe4a870a07926853668, type: 3}
   m_Name: Coin Grey
   m_EditorClassIdentifier: 
-  value: 0
+  value: 100
   material: {fileID: 0}

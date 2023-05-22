@@ -11,7 +11,7 @@ public class AnimationScale : BaseAnimation
     {
         base.Animate(visual);
 
-        visual.DOScale(1.2f, 1).SetLoops(-1, LoopType.Yoyo);
+        visual.parent.DOScale(1.1f, base.duration).SetLoops(-1, LoopType.Yoyo);
     }
 
 }
