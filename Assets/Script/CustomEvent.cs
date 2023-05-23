@@ -8,3 +8,5 @@ public class CustomEvent : ScriptableObject
 {
     public UnityEvent OnInvoked = new UnityEvent();
 }
+
+

@@ -8,6 +8,7 @@ public class Coin : MonoBehaviour
     [SerializeField] Transform visual;
     [SerializeField] CoinData coinData;
     [SerializeField] BaseAnimation baseAnimation;
+    [SerializeField, Range(0,10)] float rotationSpeed = 2;
 
     public int Value { get => coinData.value; }
 
@@ -18,4 +19,14 @@ public class Coin : MonoBehaviour
         baseAnimation.Animate(visual);
     }
 
+    private void SelfDestruct()
+    {
+        Destroy(this.gameObject);
+    }
+    void Update()
+    {
+        transform.Rotate(0, 360*rotationSpeed*Time.deltaTime, 0);
+    }
+
+    
 }

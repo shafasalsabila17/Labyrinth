@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 6331338494611177238}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   visual: {fileID: 6331338493360620020}
   coinData: {fileID: 11400000, guid: 64782c9b846d35a498f1baf8c20a7f7d, type: 2}
   baseAnimation: {fileID: 11400000, guid: 4cffc37589c81424f90ad8b3e12eafd9, type: 2}
+  rotationSpeed: 2
