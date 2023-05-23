@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Coin Gold
   m_EditorClassIdentifier: 
   value: 300
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: ff857a3d8c7d60f429c071daaab40690, type: 2}

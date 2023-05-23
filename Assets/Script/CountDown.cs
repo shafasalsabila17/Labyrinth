@@ -13,28 +13,53 @@ public class CountDown : MonoBehaviour
     bool isCounting;
     Sequence seq;
 
+    [SerializeField] bool test = false;
+
+    Coroutine countCoroutine;
+
     public void StartCount()
     {
-        Debug.Log("StartCount");
-        if (isCounting == true)
+        if (countCoroutine != null)
             return;
-        else
-            isCounting = true;
+        countCoroutine =  StartCoroutine(CountCoroutine());
+    }
 
-        seq = DOTween.Sequence();
-
-        OnCount.Invoke(duration);
-        for (int i = duration -1; i >= 0 ; i--)
+    private IEnumerator CountCoroutine()
+    {
+        for (int i = duration; i >= 0; i--)
         {
-            seq.Append(transform
-                .DOMove(this.transform.position,1)
-                .OnComplete(()=> OnCount.Invoke(i)));
+            OnCount.Invoke(1);
+            yield return new WaitForSecondsRealtime(1);
         }
-        seq.Append(transform
-            .DOMove(this.transform.position,1))
-            .SetUpdate(true)
-            .OnComplete(()=> OnCountFinished.Invoke());
-            
         OnCountFinished.Invoke();
     }
+
+    //public void StartCount()
+    //{
+    //    if (isCounting == true)
+    //        return;
+    //    else
+    //        isCounting = true;
+//
+    //    Debug.Log(DOTween.Kill(seq));
+//
+    //    seq = DOTween.Sequence();
+//
+    //    OnCount.Invoke(duration);
+    //    for (int i = duration -1; i >= 0 ; i--)
+    //    {
+    //        seq.Append(transform
+    //            .DOMove(this.transform.position,1)
+    //            .OnComplete(()=> OnCount.Invoke(i)));
+    //    }
+    //    seq.Append(transform
+    //        .DOMove(this.transform.position,1))
+    //        .SetUpdate(true)
+    //        .OnComplete(()=> 
+    //        {
+    //            isCounting =  false;
+    //            OnCountFinished.Invoke();
+    //        }
+    //        );
+    //}
 }

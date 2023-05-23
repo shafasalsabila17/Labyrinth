@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Coin Red
   m_EditorClassIdentifier: 
   value: 500
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 8a6176f583843df43a6acacc191c6d70, type: 2}

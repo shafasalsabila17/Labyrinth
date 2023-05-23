@@ -139,6 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537fc96e286e23d49a1a388357d47895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnBallEnter:
-    m_PersistentCalls:
-      m_Calls: []
+  customEvent: {fileID: 11400000, guid: 31296d09e5c222f459c64566c16384e3, type: 2}

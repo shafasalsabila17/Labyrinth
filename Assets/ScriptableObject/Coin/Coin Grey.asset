@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Coin Grey
   m_EditorClassIdentifier: 
   value: 100
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: f6c7b23ebcff25b47b29edc65f74f917, type: 2}

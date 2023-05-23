@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6331338493360620011}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 6331338494611177237}
   m_RootOrder: 0
@@ -141,4 +141,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visual: {fileID: 6331338493360620020}
-  coinData: {fileID: 0}
+  coinData: {fileID: 11400000, guid: 64782c9b846d35a498f1baf8c20a7f7d, type: 2}
+  baseAnimation: {fileID: 11400000, guid: 4cffc37589c81424f90ad8b3e12eafd9, type: 2}

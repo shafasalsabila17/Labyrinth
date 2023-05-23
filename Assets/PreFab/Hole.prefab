@@ -139,3 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537fc96e286e23d49a1a388357d47895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customEvent: {fileID: 11400000, guid: 90d73b1dbee4f204daca5ac7ec2ba329, type: 2}
